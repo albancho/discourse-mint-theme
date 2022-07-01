@@ -2,6 +2,10 @@
 @import "sidebar";
 @import "chat";
 
+:root {
+  --tertiary: #78ba33; // E&U ?
+}
+
 .d-editor-textarea-wrapper,
 .select-kit-header {
   border-radius: var(--mint-border-radius);
