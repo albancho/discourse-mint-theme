@@ -60,7 +60,7 @@ input[type="color"]:focus,
   .col {
     position: relative;
     @include border-radius;
-    background: $color-white;
+    background: var(--header_background);
     padding: 2em 2em 1em;
     border-top: 8px solid $tertiary;
     box-shadow: 0 8px 60px 0 rgba(103,151,255,.10), 0 12px 90px 0 rgba(133,255,103,.10);
@@ -99,7 +99,7 @@ input[type="color"]:focus,
 }
 
 .category-box-inner {
-  background: $color-white;
+  background: var(--header_background);
 }
 
 .navigation-topics {
@@ -107,7 +107,7 @@ input[type="color"]:focus,
     @include border-radius;
     box-shadow: 0 8px 60px 0 rgba(103,151,255,.10), 0 12px 90px 0 rgba(133,255,103,.10);
     padding: 2em;
-    background-color: $color-white;
+    background-color: var(--header_background);
     border-top: 8px solid $tertiary;
     margin-top: .8em;
   }
@@ -120,7 +120,7 @@ input[type="color"]:focus,
 }
 
 .search-menu .search-context .show-help {
-  color: $color-white;
+  color: var(--header_background);
 }
 
 .search-menu .search-input {
@@ -128,7 +128,7 @@ input[type="color"]:focus,
 }
 
 .menu-panel .d-label {
-  color: $color-black;
+  color: var(--header_primary);
 }
 
 a {
@@ -218,7 +218,7 @@ a {
 .list-controls .combo-box .combo-box-header {
   border: none;
   @include border-radius;
-  background-color: $color-white;
+  background-color: var(--header_background);
 }
 
 .menu-panel .panel-body-bottom .btn {
@@ -356,8 +356,25 @@ a:hover {
   }
 }
 
-.custom-search-banner-wrap h1, .custom-search-banner-wrap p {
-  color: $color-white;
+// force light theme on search banner
+.custom-search-banner-wrap {
+  h1,
+  p {
+    color: white !important;
+  }
+  .search-menu input[type="text"] {
+    color: $color-primary-light !important;
+    background-color: $color-secondary-light !important;
+  }
+}
+.discourse-no-touch {
+  .custom-search-banner-wrap {
+    .search-icon:hover {
+      .d-icon {
+        color: $color-primary-light !important;
+      }
+    }
+  }
 }
 
 .btn[href] {

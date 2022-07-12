@@ -2,8 +2,10 @@
   border-radius: 10px;
 }
 
-$color-white: #ffffff;
-$color-black: #000000;
+// $color-white: #ffffff; // var(--header_background)
+// $color-black: #000000; // var(--header_primary)
+$color-primary-light: #454545;
+$color-secondary-light: #f6fbfc;
 $color-box-shadow: #95c11f;
 $color-mint: #00a188;
 $color-blue: #e5f8ff;
