@@ -31,6 +31,7 @@
     position: relative;
     border-radius: var(--mint-border-radius);
     @include mint-card-bg;
+    // background: var(--header_background); // check E&U ?
     padding: 2em 2em 1em;
     border-top: 8px solid var(--tertiary);
     box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
@@ -74,6 +75,7 @@
 
 .category-box-inner {
   @include mint-card-bg;
+  // background: var(--header_background); // check E&U ?
 }
 
 .navigation-topics {
@@ -83,6 +85,7 @@
       0 12px 90px 0 rgba(133, 255, 103, 0.1);
     padding: 2em;
     @include mint-card-bg;
+    // background-color: var(--header_background); // check E&U
     border-top: 8px solid var(--tertiary);
     margin-top: 0.8em;
   }
@@ -96,6 +99,7 @@
 
 .search-menu .search-context .show-help {
   color: var(--primary-very-low);
+  // color: var(--header_background); // check E&U ?
 }
 
 .search-menu .search-input {
@@ -104,6 +108,7 @@
 
 .menu-panel .d-label {
   color: var(--primary);
+  // color: var(--header_primary); // check E&U ?
 }
 
 a {
@@ -194,6 +199,7 @@ a {
   border: none;
   border-radius: var(--mint-border-radius);
   @include mint-card-bg;
+  // background-color: var(--header_background); // check E&U ?
 }
 
 .menu-panel .panel-body-bottom .btn {
@@ -340,6 +346,8 @@ a:hover {
   }
 }
 
+
+
 .custom-search-banner-wrap {
   border-radius: var(--mint-border-radius);
   background: linear-gradient(
@@ -347,6 +355,24 @@ a:hover {
     var(--tertiary-medium) 0%,
     var(--tertiary) 100%
   );
+  // E&U force light theme on search banner
+  h1,
+  p {
+    color: white !important;
+  }
+  .search-menu input[type="text"] {
+    color: $color-primary-light !important;
+    background-color: var(mint-color-secondary-light !important; // E&U check var ?
+  }
+}
+.discourse-no-touch {
+  .custom-search-banner-wrap {
+    .search-icon:hover {
+      .d-icon {
+        color: var(--mint-color-primary-light) !important; // E&U check var ?
+      }
+    }
+  }
 }
 
 .custom-search-banner-wrap h1,

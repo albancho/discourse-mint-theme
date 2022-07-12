@@ -6,6 +6,7 @@ body:not(.navigation-categories):not(.navigation-topics) #main-outlet {
     0 12px 90px 0 rgba(133, 255, 103, 0.1);
   padding: 2em;
   @include mint-card-bg;
+  // background-color: var(--header_background); // E&U ?
   border-top: 8px solid $tertiary;
   margin-top: 1em;
 }
