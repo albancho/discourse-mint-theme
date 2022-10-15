@@ -67,6 +67,11 @@ input[type="color"]:focus,
     .header-wrapper {
       color: var(--primary);
       background-color: transparent;
+	  a {
+		h2 {
+          color: var(--tertiary);
+		}
+	  }
       .btn-primary {
         display: none;
       }
