@@ -9,6 +9,8 @@ body:not(.navigation-categories):not(.navigation-topics) #main-outlet {
   margin-top: .8em;
 }
 
+// Modif E&R: suppression des gros carres et ronds du background
+/*
 #main-outlet:after  {
   content: "";
   display: block;
@@ -37,3 +39,4 @@ body:not(.navigation-categories):not(.navigation-topics) #main-outlet {
   transform: rotate(74deg);
   transform-origin: 0 100%;
 }
+*/
