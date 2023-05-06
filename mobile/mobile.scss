@@ -3,3 +3,7 @@
     display: none;
   }
 }
+
+.d-header .title {
+	flex: 1 0 36px; // SSG: autorise le logo a grandir (au lieu de se contenter du min-width: 36px)
+}
