@@ -416,3 +416,12 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
     }
   }
 }
+
+// suppression du bouton "news" invisible dans le header
+.d-header {
+	.panel.clearfix {
+		>.header-buttons {
+			display: none;
+		}
+	}
+}
