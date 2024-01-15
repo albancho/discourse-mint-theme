@@ -8,8 +8,8 @@
 
 :root {
   --mint-border-radius: 10px;
-  --mint-hover-shadow: 4px 4px var(--tertiary-high);
-  --mint-color-mint: #00a188; // E&U
+  --mint-hover-shadow: 4px 4px var(--tertiary-high); // E&T: #F07D00
+  --mint-color-mint: #8B1D82; // E&T
   --mint-color-blue: #e5f8ff;
   --mint-color-primary-light: #454545; // E&U couleur en dure du theme light pour input de recherche
   --mint-color-secondary-light: #f6fbfc; // E&U couleur en dure du theme light pour input de recherche
@@ -17,11 +17,11 @@
 
 $color-square-gradient: linear-gradient(
   4deg,
-  rgba(143, 236, 202, 0.29) 55%,
+  rgba(237, 232, 242, 0.8) 55%,
   rgba(74, 247, 255, 0.08) 100%
 );
 $color-square-webkit-gradient: -webkit-linear-gradient(
   4deg,
-  rgba(143, 236, 202, 0.29) 55%,
+  rgba(237, 232, 242, 0.8) 55%,
   rgba(74, 247, 255, 0.08) 100%
 );
