@@ -32,7 +32,7 @@
     border-radius: var(--mint-border-radius);
     @include mint-card-bg;
     padding: 2em 2em 1em;
-    border-top: 8px solid var(--tertiary);
+    border-top: 8px solid var(--e-and-t-color-3);
     box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
       0 12px 90px 0 rgba(237, 232, 242, 0.8); // E&T rgba
     .header-wrapper {
@@ -46,14 +46,14 @@
     }
     .btn-more {
       color: var(--secondary);
-      background: var(--tertiary);
+      background: var(--e-and-t-color-4);
       transition: all 0.3s linear;
       border-radius: var(--mint-border-radius);
       text-transform: uppercase;
-      border: 1px solid var(--tertiary);
+      border: 1px solid var(--e-and-t-color-3);
       &:hover {
         color: var(--secondary);
-        background: var(--tertiary-hover);
+        background: var(--e-and-t-color-3);
       }
     }
   }
@@ -155,16 +155,16 @@ a {
 
 #create-topic {
   color: var(--secondary);
-  background: var(--tertiary);
+  background: var(--e-and-t-color-4);
   transition: all 0.3s linear;
   border-radius: var(--mint-border-radius);
   text-transform: uppercase;
-  border: 2px solid var(--tertiary);
+  border: 2px solid var(--e-and-t-color-4);
   .fa {
     color: var(--secondary);
   }
   &:hover {
-    background: var(--tertiary);
+    background: var(--e-and-t-color-4);
     color: var(--secondary);
     box-shadow: var(--mint-hover-shadow);
     transition: all 0.3s linear;
@@ -251,21 +251,21 @@ a {
   }
   &:hover {
     color: var(--secondary);
-    background: var(--tertiary-hover);
-    border: 1px solid var(--tertiary-hover);
+    background: var(--e-and-t-color-3);
+    border: 1px solid var(--e-and-t-color-3);
     border-radius: 5px;
   }
 }
 
 .discourse-no-touch .btn:hover .d-icon,
 .discourse-no-touch .btn.btn-hover .d-icon {
-  color: var(--tertiary-hover);
+  color: var(--e-and-t-color-3);
 }
 
 .discourse-no-touch .btn:not(.btn-flat):hover,
 .discourse-no-touch .btn:not(.btn-flat).btn-hover {
   color: var(--secondary);
-  background: var(--tertiary-hover);
+  background: var(--e-and-t-color-3);
   border-radius: 5px;
   .fa {
     color: var(--secondary);
@@ -281,11 +281,11 @@ a {
 
 .btn-default {
   color: var(--secondary);
-  background: var(--tertiary);
+  background: var(--e-and-t-color-4);
   transition: all 0.3s linear;
   border-radius: var(--mint-border-radius);
   text-transform: uppercase;
-  border: 1px solid var(--tertiary);
+  border: 1px solid var(--e-and-t-color-4);
   .fa {
     color: var(--secondary);
   }
@@ -333,7 +333,7 @@ a:hover {
 .email-template,
 .admin-container {
   .nav-pills > li a.active {
-    background: var(--tertiary);
+    background: var(--e-and-t-color-4);
     color: var(--secondary);
   }
   .btn-primary {
@@ -346,10 +346,11 @@ a:hover {
 .custom-search-banner-wrap {
   border-radius: var(--mint-border-radius);
   background: linear-gradient(
-    270deg,
-    var(--tertiary-medium) 0%,
-    var(--tertiary) 100%
-  );
+  45deg,
+  var(--e-and-t-color-1) 0%, // violet
+  var(--e-and-t-color-2) 10%, // violet clair
+  var(--e-and-t-color-3) 50%, // rouge
+  var(--e-and-t-color-4) 100%); // orange
   // E&U force light theme on search banner
   h1,
   p {

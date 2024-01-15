@@ -7,9 +7,13 @@
 }
 
 :root {
+  --e-and-t-color-1: #4D1D82; // violet fonce
+  --e-and-t-color-2: #8B1D82; // violet clair
+  --e-and-t-color-3: #CF022B; // rouge
+  --e-and-t-color-4: #F07D00; // orange
   --mint-border-radius: 10px;
-  --mint-hover-shadow: 4px 4px var(--tertiary-high); // E&T: #F07D00
-  --mint-color-mint: #8B1D82; // E&T
+  --mint-hover-shadow: 4px 4px var(--e-and-t-color-3); // #F07D00
+  --mint-color-mint: #8B1D82; // E&T violet clair
   --mint-color-blue: #e5f8ff;
   --mint-color-primary-light: #454545; // E&U couleur en dure du theme light pour input de recherche
   --mint-color-secondary-light: #f6fbfc; // E&U couleur en dure du theme light pour input de recherche
