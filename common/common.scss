@@ -31,7 +31,6 @@
     position: relative;
     border-radius: var(--mint-border-radius);
     @include mint-card-bg;
-    // background: var(--header_background); // check E&U ?
     padding: 2em 2em 1em;
     border-top: 8px solid var(--tertiary);
     box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.1),
@@ -75,7 +74,6 @@
 
 .category-box-inner {
   @include mint-card-bg;
-  // background: var(--header_background); // check E&U ?
 }
 
 .navigation-topics {
@@ -85,7 +83,6 @@
       0 12px 90px 0 rgba(133, 255, 103, 0.1);
     padding: 2em;
     @include mint-card-bg;
-    // background-color: var(--header_background); // check E&U
     border-top: 8px solid var(--tertiary);
     margin-top: 0.8em;
   }
@@ -99,7 +96,6 @@
 
 .search-menu .search-context .show-help {
   color: var(--primary-very-low);
-  // color: var(--header_background); // check E&U ?
 }
 
 .search-menu .search-input {
@@ -108,7 +104,6 @@
 
 .menu-panel .d-label {
   color: var(--primary);
-  // color: var(--header_primary); // check E&U ?
 }
 
 a {
@@ -126,6 +121,7 @@ a {
     overflow: hidden;
     border: none;
     border-top: 8px solid;
+	border-color: var(--category-color); // E&U le haut de la categorie sera de la couleur de la categorie
     background: var(--secondary);
     border-radius: var(--mint-border-radius);
     box-shadow: 0px 2px 3px 0px rgba(2, 47, 57, 0.14);
@@ -199,7 +195,6 @@ a {
   border: none;
   border-radius: var(--mint-border-radius);
   @include mint-card-bg;
-  // background-color: var(--header_background); // check E&U ?
 }
 
 .menu-panel .panel-body-bottom .btn {
@@ -361,19 +356,20 @@ a:hover {
     color: white !important;
   }
   .search-menu input[type="text"] {
-    color: $color-primary-light !important;
-    background-color: var(mint-color-secondary-light !important; // E&U check var ?
+    color: var(--mint-color-primary-light) !important;
+    background-color: var(--mint-color-secondary-light) !important;
   }
 }
 .discourse-no-touch {
   .custom-search-banner-wrap {
     .search-icon:hover {
       .d-icon {
-        color: var(--mint-color-primary-light) !important; // E&U check var ?
+        color: var(--mint-color-primary-light) !important; // E&U, survol de l'icone loupe de la searchbar
       }
     }
   }
 }
+// Fin modif E&U
 
 .custom-search-banner-wrap h1,
 .custom-search-banner-wrap p {
@@ -433,7 +429,7 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
 
 // suppression du bouton "news" invisible dans le header
 .d-header {
-	.panel.clearfix {
+	.panel {
 		>.header-buttons {
 			display: none;
 		}

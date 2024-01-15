@@ -9,10 +9,10 @@
 :root {
   --mint-border-radius: 10px;
   --mint-hover-shadow: 4px 4px var(--tertiary-high);
-  --mint-color-mint: #75bdad; // E&U: #00a188 ?
+  --mint-color-mint: #00a188; // E&U
   --mint-color-blue: #e5f8ff;
-  --mint-color-primary-light: #454545; // check E&U ?
-  --mint-color-secondary-light: #f6fbfc; // check E&U ?
+  --mint-color-primary-light: #454545; // E&U couleur en dure du theme light pour input de recherche
+  --mint-color-secondary-light: #f6fbfc; // E&U couleur en dure du theme light pour input de recherche
 }
 
 $color-square-gradient: linear-gradient(
